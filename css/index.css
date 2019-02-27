@@ -2,11 +2,41 @@
 
 header {
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1rem;
+    text-align: right;
 }    
 
-.logo-s {
-    max-width: 30px;
-    max-height: 30px;
+header .banner{
+    background-image: url(../img/gipsokarton-logo-s.png);
+    background-size: 20;
+    background-position: left;
+    min-height: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+header nav .menu {
+    display: flex;
+}
+
+header nav .menu {
+    padding: 0;
+    justify-content: center;
+}
+
+header nav .menu li {
+    list-style-type: none;
+}
+
+header nav .menu a {
+    text-decoration: none;
+    color: var(--main-font-color);
+    text-transform: uppercase;
+}
+
+header nav .menu a:hover {
+    text-decoration: underline;
 }
