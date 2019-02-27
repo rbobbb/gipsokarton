@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+header {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}    
+
+.logo-s {
+    max-width: 30px;
+    max-height: 30px;
+}
