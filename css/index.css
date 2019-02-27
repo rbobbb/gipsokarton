@@ -3,28 +3,22 @@
 header {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 1rem;
-    text-align: right;
+    text-align: center;
 }    
 
 header .banner{
-    background-image: url(../img/gipsokarton-logo-s.png);
-    background-size: 20;
-    background-position: left;
-    min-height: 50px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
+   
 }
 
 
 header nav .menu {
     display: flex;
+    
 }
 
 header nav .menu {
-    padding: 0;
-    justify-content: center;
+    padding: 2;
+    justify-content: space-around;
 }
 
 header nav .menu li {
