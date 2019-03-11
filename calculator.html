@@ -28,7 +28,7 @@
         <a href="https://gipsokarton-rbob.c9users.io/contacts.html">"Контакти"</a></li>
     </ul>
   </nav>
-  <form method="POST" action="https://formspree.io/roman.bobyk@gmail.com">
+  <form name="customerForm" method="POST" action="https://formspree.io/roman.bobyk@gmail.com">
     <h1><strong>Калькулятор вартості дизайнеського ремонту</strong></h1>
     <p><img src="img/icones/data-usage-icon.png" alt="data-usage-icon" />
       <label for="стиль-ремонту">
@@ -76,17 +76,18 @@
         <option value="Розробка проекту">Розробка проекту</option>
         <option value="Авторський нагляд">Авторський нагляд</option>
       </select></p>
-    <p><label>Ім'я, Прізвище:<input type="text" placeholder="Ім'я, прізвище" name="your-name" />
+    <p><label>Ім'я, Прізвище:<input type="text" placeholder="Ім'я, прізвище" name="yourName" required />
       </label>
       <br>
-      <label>Номер телефону:<input type="text" placeholder="Номер телефону" name="phone-number" />
+      <label>Номер телефону:<input type="text" placeholder="Номер телефону" name="phoneNumber" required />
 	      </label>
       <br>
-      <label>E-mail:<input type="text" placeholder="E-mail" name="e-mail" />
+      <label>E-mail:<input type="text" placeholder="E-mail" name="eMail" required />
 	      </label>
       <label for="msg">Примітки:</label>
-      <textarea id="msg" placeholder="Примітки" name="user_message"></textarea>
+      <textarea id="msg" placeholder="Примітки" name="useMessage"></textarea>
       <input type="submit" value="Розрахувати" />
+      <!--<input type="button" class="btn btn-default" value="Розрахувати" id="submitBtn"/>-->
     </p>
   </form>
   <footer>
@@ -107,6 +108,7 @@
     </h3>
     <p>Copyright-2019</p>
   </footer>
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
