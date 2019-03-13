@@ -219,3 +219,39 @@ select::-ms-expand {
     margin-top: 40px;
     align-items: baseline;
 }
+
+.personal {
+    margin: 50px;
+}
+
+.person {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+
+.footer {
+margin-top: 50px;
+}
+
+.phone-icon {
+max-width: 48px;
+ }
+ 
+ .soc-media {
+display: flex;
+justify-content: space-between;
+}
+
+.contacts {
+    margin: 50px;
+    text-align: center;
+    text-decoration: underline;
+    }
+.paragraph {
+    text-decoration: overline;
+    margin-top: 40px;
+}

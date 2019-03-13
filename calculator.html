@@ -183,38 +183,72 @@
       <!--</select>-->
       </p>
       </div>
-    <p><label>Ім'я, Прізвище:<input type="text" placeholder="Ім'я, прізвище" name="yourName" required />
-      </label>
-      <br>
-      <label>Номер телефону:<input type="text" placeholder="Номер телефону" name="phoneNumber" required />
-	      </label>
-      <br>
-      <label>E-mail:<input type="text" placeholder="E-mail" name="eMail" required />
-	      </label>
-      <label for="msg">Примітки:</label>
-      <textarea id="msg" placeholder="Примітки" name="useMessage"></textarea>
-      <input type="submit" value="Розрахувати" />
+      <div class="personal">
+      <div class="person">  
+      </p>
+        <img src="img/icones/person-icon.png"></img>
+        Ваші контакти</p>
+        </div>
+        <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-2 mb-4">
+                                <label for="validationCustom01">Ім'я</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ім'я" value="" required>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <label for="validationCustom02">Прізвище</label>
+                                <input type="text" class="form-control" id="validationCustom02" placeholder="Прізвище" value="" required>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label for="validationCustom">Номер телефону</label>
+                                <input type="text" class="form-control" id="validationCustom" placeholder="номер телефону" value="" required>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label for="validationCustom03">e-mail</label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="e-mail" required>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label for="msg">Примітки</label>
+                                <textarea id="msg" placeholder="Примітки" name="useMessage"></textarea>
+                                <!--<input type="text" class="form-control" id="validationCustom05" placeholder="Примітки">-->
+                            </div>
+                            <div class="form-submit">
+                                <button class="btn btn-primary" type="submit">Замовити</button>
+                            </div>
+    <!--<p><label>Ім'я, Прізвище:<input type="text" placeholder="Ім'я, прізвище" name="yourName" required />-->
+    <!--  </label>-->
+    <!--  <br>-->
+    <!--  <label>Номер телефону:<input type="text" placeholder="Номер телефону" name="phoneNumber" required />-->
+	   <!--   </label>-->
+    <!--  <br>-->
+    <!--  <label>E-mail:<input type="text" placeholder="E-mail" name="eMail" required />-->
+	   <!--   </label>-->
+    <!--  <label for="msg">Примітки:</label>-->
+    <!--  <textarea id="msg" placeholder="Примітки" name="useMessage"></textarea>-->
+    <!--  <input type="submit" value="Розрахувати" />-->
       <!--<input type="button" class="btn btn-default" value="Розрахувати" id="submitBtn"/>-->
-     </p>
+    <!-- </p>-->
+     </div>
   </form>
-  <footer>
-    <p>Слідкуйте за нами</p>
-    <h3>
-      <a href="https://gipsokarton-rbob.c9users.io/index.html">
-        <!--Замінити на контакти як будуть готові!-->
-        <img src="img/phone-icon.png" alt="phone-icon" /><br>093-123-45-67 067-123-45-67</a>
-      <a href="https://gipsokarton-rbob.c9users.io/index.html">
-        <!--Замінити на контакти як будуть готові!-->
-        <img src="img/icones/facebook.svg" alt="facebook-icon" /></a>
-      <a href="https://gipsokarton-rbob.c9users.io/index.html">
-        <!--Замінити на контакти як будуть готові!-->
-        <img src="img/icones/instagram.svg" alt="instagram-icon" /></a>
-      <a href="https://gipsokarton-rbob.c9users.io/index.html">
-        <!--Замінити на контакти як будуть готові!-->
-        <img src="img/icones/youtube.svg" alt="yeutube-icon" /></a>
-    </h3>
-    <p>Copyright-2019</p>
-  </footer>
+            <footer>
+                 <div class="contacts">
+                <p>Слідкуйте за нами</p>
+                <div class="soc-media">
+                    <a href="contacts.html">
+                    <img src="img/phone-icon.png" alt="іконка телефону" class="phone-icon"/>
+                        </a>
+                    <a href="contacts.html">
+                        <img src="img/icones/facebook.svg" alt="іконка фейсбук"/>
+                    </a>
+                    <a href="contacts.html">
+                        <img src="img/icones/instagram.svg" alt="іконка інстаграм"/>
+                    </a>
+                    <a href="contacts.html">
+                        <img src="img/icones/youtube.svg" alt="іконка ютуб"/>
+                    </a>
+                </div>
+                </div>
+             </footer>
   </div>
   <script type="text/javascript" src="js/index.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
