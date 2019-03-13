@@ -1,19 +1,69 @@
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+.banner .logo {
+    display: flex;
+    max-width: 400px;
+    margin: 50px auto;
+}
 
-body {
-    max-width: 980px;
-    margin: auto;
+.navbar-expand-lg .navbar-collapse {
+    justify-content:flex-end;
+    font-size: 1.2rem;
 }
-header {
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 1.5rem;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    display: grid;
-    grid-template-col: 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding: 0;
+
+.display-4 {
+    padding: inherit
 }
+
+.lead {
+    padding: inherit
+}
+
+.jumbotron {
+background-color: #b885444a;
+}
+
+.h2, h2 {
+display: flex;
+justify-content: center;
+text-decoration: underline;
+}
+
+   
+ .contacts {
+margin-top: 40px;
+margin-bottom: 40px;
+background-color: #eadbc8;
+ }
+ 
+.phone-icon {
+max-width: 48px;
+ }
+ 
+.soc-media {
+display: flex;
+justify-content: space-between;
+margin: 40px;
+}
+.map {
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+/*@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');*/
+
+/*body {*/
+/*    max-width: 980px;*/
+/*    margin: auto;*/
+/*}*/
+/*header {*/
+/*    font-family: 'Didact Gothic', sans-serif;*/
+/*    font-size: 1.5rem;*/
+/*    padding-top: 1rem;*/
+/*    padding-left: 1rem;*/
+/*    display: grid;*/
+/*    grid-template-col: 1fr 1fr;*/
+/*    grid-template-rows: 1fr;*/
+/*    padding: 0;*/
+/*}*/
 
 
 /*  header nav  {*/
@@ -34,28 +84,28 @@ header {
 
 
 
-header  .banner .logo{
-   margin-left: 20px;
-   margin-top: 20px;
-}
+/*header  .banner .logo{*/
+/*   margin-left: 20px;*/
+/*   margin-top: 20px;*/
+/*}*/
 
 
-header nav .menu li {
-    list-style-type: none;
-    text-decoration: none;
-}
+/*header nav .menu li {*/
+/*    list-style-type: none;*/
+/*    text-decoration: none;*/
+/*}*/
 
-header nav .menu a {
-    text-decoration: none;
+/*header nav .menu a {*/
+/*    text-decoration: none;*/
   
-}
+/*}*/
 
-header nav .menu a:hover {
-    text-decoration: underline;
-}
+/*header nav .menu a:hover {*/
+/*    text-decoration: underline;*/
+/*}*/
 
-@media (min-width: 670px) {
-    header nav .menu {
-        display: flex;
-    }
-}
+/*@media (min-width: 670px) {*/
+/*    header nav .menu {*/
+/*        display: flex;*/
+/*    }*/
+/*}*/

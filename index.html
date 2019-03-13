@@ -1,97 +1,173 @@
 <!DOCTYPE html>
 <html lang="uk">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gipsokarton</title>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-
-<body>
-    <header>
-        <div class="banner">
-            <a href="index.html">
-            <img src="img/gipsokarton-logo.png" alt="лого будівельної компанії" class="logo"></a>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="index.html">Про нас</a></li>
-                <li>
-                    <a href="calculator.html">Калькулятор вартості</a></li>
-                <li>
-                    <a href="portfolio.html">Портфоліо</a></li>
-                <li>
-                    <a href="contacts.html">Контакти</a></li>
-            </ul> 
-        </nav>
-    </header>
-    <!-- <main>
-        <h1>Ремонт будь-якої складності "під ключ "!<br> Зробіть замовлення замірника з форми сайту, та отримайте попередній кошторис прямо на об'єкті!
-        </h1>
-        <a href=contacts.html">"Контакти"</a>
-                    <img src="img/phone-icon.png" alt="іконка телефону" /><br>093-123-45-67 067-123-45-67</a>
-                    <p></p>
-                    <form method="POST" action="https://formspree.io/roman.bobyk@gmail.com">
-                        <label>Ім'я, Прізвище:<input type="text" placeholder="Ім'я, прізвище" name="your-name" />
-            </label>
-                        <br>
-                        <label>Номер телефону:<input type="text" placeholder="Номер телефону" name="phone-number" />
-	      </label>
-                        <p>
-                            <label for="стиль-ремонту">
-            <span>Стиль ремонту:</span>
-             </label>
-                            <select id="стиль-ремонту" name="стиль-ремонту">
-            <option value="minimalism">Мінімалізм</option>
-            <option value="scandinvian">Скандинавський</option>
-            <option value="loft">Лофт</option>
-            <option value="modern-classic">Сучасна класика</option>
-            </select>
-                        </p>
-                        <p>
-                            <label for="date">
-            <span>Вибір дати:</span>
-            <strong><abbr title="required">*</abbr></strong>
-            </label>
-                            <input type="date" id="date" name="pickdate">
-                        </p>
-                        <p>
-                            <label for="msg">Примітки:</label>
-                            <textarea id="msg" placeholder="Примітки" name="user_message"></textarea></p>
-                        <input type="submit" value="Замовити" />
-                    </form>
-                    </main>
-                    <section id="content">
-                        <h2>Про Нас</h2>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gipsokarton</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="banner">
+                    <a href="index.html">
+                        <img src="img/gipsokarton-logo-l.png" alt="лого будівельної компанії" class="logo">
+                    </a>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">GIPSOKARTON</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Про нас<span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="calculator.html">Калькулятор</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Портфоліо</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.html">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="jumbotron jumbotron-fluid1">
+                    <div class="container">
+                        <h1 class="display-4">Ремонт будь-якої складності "під ключ"!</h1>
+                        <p class="lead">Зробіть замовлення замірника з форми сайту, та отримайте попередній кошторис прямо на об'єкті!</p>
+                    </div>
+                </div>
+                <div class="jumbotron jumbotron-fluid2">
+                <form class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="col-md-2 mb-4">
+                            <label for="validationCustom01">Ім'я</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Ім'я" value="" required>
+                        </div>
+                        <div class="col-md-2 mb-4">
+                            <label for="validationCustom02">Прізвище</label>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Прізвище" value="" required>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="validationCustom">Номер телефону</label>
+                            <input type="text" class="form-control" id="validationCustom" placeholder="номер телефону" value="" required>
+                        </div>
+                            <div class="col-md-2 mb-3">
+                                <label for="validationCustom03">Місто</label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Місто" required>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label for="validationCustom04">Дата виїзду</label>
+                                <input type="date" class="form-control" id="validationCustom04" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="disabledSelect">Стиль ремонту</label>
+                                <select id="disabledSelect" class="form-control">
+                                    <option>Мінімалізм</option>
+                                    <option>Скандинавський</option>
+                                    <option>Лофт</option>
+                                    <option>Сучасна класика</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label for="msg">Примітки</label>
+                                <textarea id="msg" placeholder="Примітки" name="useMessage"></textarea>
+                                <!--<input type="text" class="form-control" id="validationCustom05" placeholder="Примітки">-->
+                            </div>
+                            <div class="form-submit">
+                                <button class="btn btn-primary" type="submit">Замовити</button>
+                            </div>
+                            
+                    </div>
+                </form>
+                </div>
+            </main>    
+                <script>
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function() {
+                        'use strict';
+                        window.addEventListener('load', function() {
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            var forms = document.getElementsByClassName('needs-validation');
+                            // Loop over them and prevent submission
+                            var validation = Array.prototype.filter.call(forms, function(form) {
+                                form.addEventListener('submit', function(event) {
+                                    if (form.checkValidity() === false) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                    }
+                                    form.classList.add('was-validated');
+                                }, false);
+                            });
+                        }, false);
+                    }
+                    )();
+                </script>
+            </main>
+            <section id="content">
+                <h2>Про Нас</h2>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor
                             mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut
                             vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris,
                             malesuada quis ornare accumsan, blandit sed diam.
                         </h3>
-                        <img src="img/about/about-a.jpg" alt="Фото команди" />
-                        <img src="img/about/about-b.jpg" alt="Фото команди" />
-                        <img src="img/about/about-c.jpg" alt="Фото команди" />
-                        <img src="img/about/about-d.jpg" alt="Фото команди" />
-                    </section>
-                    <footer>
-                        <h2>Контакти</h2>
-                        <h3><a href="contacts.html"> 
-            <img src="img/phone-icon.png" alt="іконка телефону"/><br>093-123-45-67    067-123-45-67</a>
-                            <a href="contacts.html"> 
-            <img src="img/icones/facebook.svg" alt="іконка фейсбук"/></a>
-                            <a href="contacts.html"> 
-            <img src="img/icones/instagram.svg" alt="іконка інстаграм"/></a>
-                            <a href="contacts.html"> 
-            <img src="img/icones/youtube.svg" alt="іконка ютуб"/></a>
-                        </h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164705.55762681522!2d23.872152863506173!3d49.83260464310914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1550921674520"
-                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        <h4>м.Львів, вул. Липинського, 555<br>м.Луцьк, вул.Шевченка, 777<br>м.Рівне, вул. Франка, 111</h4>
-                        <p>Copyright-2019</p>
-                    </footer> -->
-</body>
-
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/about/about-a.jpg" class="d-block w-100" alt="Фото команди">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/about/about-b.jpg" class="d-block w-100" alt="Фото команди">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/about/about-c.jpg" class="d-block w-100" alt="Фото команди">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/about/about-d.jpg" class="d-block w-100" alt="Фото команди">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="contacts">
+                <h2>Контакти</h2>
+                <div class="soc-media">
+                    <a href="contacts.html">
+                    <img src="img/phone-icon.png" alt="іконка телефону" class="phone-icon"/>
+                        </a>
+                    <a href="contacts.html">
+                        <img src="img/icones/facebook.svg" alt="іконка фейсбук"/>
+                    </a>
+                    <a href="contacts.html">
+                        <img src="img/icones/instagram.svg" alt="іконка інстаграм"/>
+                    </a>
+                    <a href="contacts.html">
+                        <img src="img/icones/youtube.svg" alt="іконка ютуб"/>
+                    </a>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164705.55762681522!2d23.872152863506173!3d49.83260464310914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1550921674520" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <h4>
+                    <p>м.Львів, вул. Липинського, 555</p><br>
+                   <p>м.Луцьк, вул.Шевченка, 777</p><br>
+                   <p>м.Рівне, вул. Франка, 111</p><br>
+                </h4>
+                </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
 </html>

@@ -1,0 +1,10 @@
+.banner .logo {
+    display: flex;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content:flex-end;
+    font-size: 1.2rem;
+}

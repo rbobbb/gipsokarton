@@ -5,77 +5,184 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Gipsokarton</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href=css/calc.css>
 </head>
 
 <body>
-  <header>
-    <a href="https://gipsokarton-rbob.c9users.io/index.html">
-            <img src="img/gipsokarton-logo-s.png" alt="gipsokarton-logo"/></a>
-    <a href="https://gipsokarton-rbob.c9users.io/index.html">
-                <img src="img/gipsokarton-logo-l.png" alt="gipsokarton-logo"/>
-        </a>
-  </header>
-  <nav>
-    <ul>
-      <li>
-        <a href="https://gipsokarton-rbob.c9users.io/index.html">"Про нас"</a></li>
-      <li>
-        <a href="https://gipsokarton-rbob.c9users.io/calculator.html">"Калькулятор вартості"</a></li>
-      <li>
-        <a href="https://gipsokarton-rbob.c9users.io/portfolio.html">"Портфоліо"</a></li>
-      <li>
-        <a href="https://gipsokarton-rbob.c9users.io/contacts.html">"Контакти"</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+            <header>
+                <div class="banner">
+                    <a href="index.html">
+                        <img src="img/gipsokarton-logo-l.png" alt="лого будівельної компанії" class="logo">
+                    </a>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">GIPSOKARTON</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Про нас</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="calculator.html">Калькулятор<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Портфоліо</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.html">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
   <form name="customerForm" method="POST" action="https://formspree.io/roman.bobyk@gmail.com">
-    <h1><strong>Калькулятор вартості дизайнеського ремонту</strong></h1>
-    <p><img src="img/icones/data-usage-icon.png" alt="data-usage-icon" />
-      <label for="стиль-ремонту">
-        <span>Стиль ремонту:</span>
-      </label>
-      <select id="стиль-ремонту" name="стиль-ремонту">
-        <option value="minimalism">Мінімалізм</option>
-        <option value="scandinvian">Скандинавський</option>
-        <option value="loft">Лофт</option>
-        <option value="modern-classic">Сучасна класика</option>
-      </select></p>
-    <h3>Мінімалізм</h3>
-    <img src="img/calculator/minimalism.jpg" alt="minimalism" />
-    <h3>Скандинавський</h3>
-    <img src="img/calculator/scandinavian.jpg" alt="scandinavian" />
-    <h3>Лофт</h3>
-    <img src="img/calculator/loft.jpg" alt="loft" />
-    <h3>Сучасна класика</h3>
-    <img src="img/calculator/modern-classic.jpg" alt="modern-classic" />
-    <p><img src="img/icones/home-icon.svg" alt="home-icon" />Житло</p>
+    <div class="calc-name"></div>
+    <h1>Калькулятор вартості дизайнеського ремонту</h1>
+    </div>
+    <div class="style-choice">
+    <p><img src="img/icones/data-usage-icon.png" alt="іконка вибру стилю ремонту" />
+    <div class="center-on-page">
+  <div class="select">
+    <select name="slct" id="slct">
+      <option>Вибір стилю</option>
+      <option value="1">Мінімалізм</option>
+      <option value="2">Скандинавський</option>
+      <option value="3">Лофт</option>
+      <option value="4">Сучасна класика</option>
+    </select>
+  </div>
+</div>
+<!--    <div class="dropdown">-->
+<!--  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--    Стиль ремонту:-->
+<!--  </button>-->
+<!--  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">-->
+<!--    <a class="dropdown-item" href="#">Мінімалізм</a>-->
+<!--    <a class="dropdown-item" href="#">Скандинавський</a>-->
+<!--    <a class="dropdown-item" href="#">Лофт</a>-->
+<!--    <a class="dropdown-item" href="#">Сучасна класика</a>-->
+<!--  </div>-->
+<!--</div>-->
+      <!--<label for="стиль-ремонту">-->
+      <!--  <span>Стиль ремонту:</span>-->
+      <!--</label>-->
+      <!--<select id="стиль-ремонту" name="стиль-ремонту">-->
+      <!--  <option value="minimalism">Мінімалізм</option>-->
+      <!--  <option value="scandinvian">Скандинавський</option>-->
+      <!--  <option value="loft">Лофт</option>-->
+      <!--  <option value="modern-classic">Сучасна класика</option>-->
+      <!--</select></p>-->
+      </div>
+      <div class="img-styles">
+<div class="card" style="width: 18rem;">
+  <img src="img/calculator/minimalism.jpg" class="card-img-top" alt="мінімалізм">
+  <div class="card-body">
+    <p class="card-text">Мінімалізм.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="img/calculator/scandinavian.jpg" class="card-img-top" alt="скандинавський">
+  <div class="card-body">
+    <p class="card-text">Скандинавський.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="img/calculator/loft.jpg" class="card-img-top" alt="лофт">
+  <div class="card-body">
+    <p class="card-text">Лофт.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="img/calculator/modern-classic.jpg" class="card-img-top" alt="сучасна класика">
+  <div class="card-body">
+    <p class="card-text">Сучасна класика.</p>
+  </div>
+</div>
+</div>
+    <!--<h3>Мінімалізм</h3>-->
+    <!--<img src="img/calculator/minimalism.jpg" alt="minimalism" />-->
+    <!--<h3>Скандинавський</h3>-->
+    <!--<img src="img/calculator/scandinavian.jpg" alt="scandinavian" />-->
+    <!--<h3>Лофт</h3>-->
+    <!--<img src="img/calculator/loft.jpg" alt="loft" />-->
+    <!--<h3>Сучасна класика</h3>-->
+    <!--<img src="img/calculator/modern-classic.jpg" alt="modern-classic" />-->
+    <div class="style-choice">
+    <p><img src="img/icones/home-icon.png" alt="home-icon" />
+    Житло</p>
+     </div>
+     <div class="area">
     <p>Площа, м2
-      <input type="range" min="0" max="120" step="1" value="50">
+      <div class="range-slider">
+  <input class="range-slider__range" type="range" value="77" min="0" max="150">
+  <span class="range-slider__value">0</span>
+</div>
     </p>
+    </div>
+    <div class="city">
     <p><label for="населений-пункт">
-        <span>Населений пункт:</span>
-      </label>
-      <select id="населений-пункт" name="Населений-пункт">
-        <option value="Львів">Львів</option>
-        <option value="Луцьк">Луцьк</option>
-        <option value="Рівне">Рівне</option>
-      </select></p>
+        <span>Населений пункт:</span></lable>
+          <div class="select">
+    <select name="slct" id="slct">
+      <option>населений пункт</option>
+      <option value="1">Львів</option>
+      <option value="2">Луцьк</option>
+      <option value="3">Рівне</option>
+      <option value="4">Тернопіль</option>
+    </select></p>
+  </div>
+      <!--</label>-->
+      <!--<select id="населений-пункт" name="Населений-пункт">-->
+      <!--  <option value="Львів">Львів</option>-->
+      <!--  <option value="Луцьк">Луцьк</option>-->
+      <!--  <option value="Рівне">Рівне</option>-->
+      <!--</select></p>-->
+      </div>
+      <div class="type-of-house">
     <p><label for="тип-житла">
         <span>Тип житла:</span>
       </label>
-      <select id="тип-житла" name="Тип-житла">
-        <option value="Новобудова">Новобудова</option>
-        <option value="Квартира (вторинний ринок)">Квартира (вторинний ринок)</option>
-        <option value="Приватний будинок">Приватний будинок</option>
-      </select></p>
+        <div class="select">
+    <select name="slct" id="slct">
+      <option>тип житла</option>
+      <option value="1">Новобудова</option>
+      <option value="2">Квартира (вторинний ринок)</option>
+      <option value="3">Приватний будинок</option>
+      <option value="4">Квартира (для оренди)</option>
+    </select>
+  </div>
+      <!--<select id="тип-житла" name="Тип-житла">-->
+      <!--  <option value="Новобудова">Новобудова</option>-->
+      <!--  <option value="Квартира (вторинний ринок)">Квартира (вторинний ринок)</option>-->
+      <!--  <option value="Приватний будинок">Приватний будинок</option>-->
+      <!--</select>-->
+      </p>
+      </div>
+      <div class="service">
     <p><label for="послуга">
         <span>Послуга:</span>
-      </label>
-      <select id="послуга" name="Послуга">
-        <option value="Під ключ">"Під ключ"</option>
-        <option value="Розробка проекту">Розробка проекту</option>
-        <option value="Авторський нагляд">Авторський нагляд</option>
-      </select></p>
+          <div class="select">
+    <select name="slct" id="slct">
+      <option>послуга</option>
+      <option value="1">"Під ключ"</option>
+      <option value="2">Розробка проекту</option>
+      <option value="3">Авторський нагляд</option>
+    </select>
+  </div>
+      <!--</label>-->
+      <!--<select id="послуга" name="Послуга">-->
+      <!--  <option value="Під ключ">"Під ключ"</option>-->
+      <!--  <option value="Розробка проекту">Розробка проекту</option>-->
+      <!--  <option value="Авторський нагляд">Авторський нагляд</option>-->
+      <!--</select>-->
+      </p>
+      </div>
     <p><label>Ім'я, Прізвище:<input type="text" placeholder="Ім'я, прізвище" name="yourName" required />
       </label>
       <br>
@@ -88,7 +195,7 @@
       <textarea id="msg" placeholder="Примітки" name="useMessage"></textarea>
       <input type="submit" value="Розрахувати" />
       <!--<input type="button" class="btn btn-default" value="Розрахувати" id="submitBtn"/>-->
-    </p>
+     </p>
   </form>
   <footer>
     <p>Слідкуйте за нами</p>
@@ -108,7 +215,12 @@
     </h3>
     <p>Copyright-2019</p>
   </footer>
+  </div>
   <script type="text/javascript" src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/idex.js"></script>
 </body>
 
 </html>

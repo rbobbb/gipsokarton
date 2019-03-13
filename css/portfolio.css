@@ -1,0 +1,43 @@
+.banner .logo {
+    display: flex;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content:flex-end;
+    font-size: 1.2rem;
+}
+
+.portfol {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.carousel-item {
+max-height: 780px;
+}
+
+.footer {
+margin-top: 50px;
+}
+
+.phone-icon {
+max-width: 48px;
+ }
+ 
+ .soc-media {
+display: flex;
+justify-content: space-between;
+}
+
+.contacts {
+    margin: 50px;
+    text-align: center;
+    text-decoration: underline;
+    }
+.paragraph {
+    text-decoration: overline;
+    margin-top: 40px;
+}
