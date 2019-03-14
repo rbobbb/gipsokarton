@@ -1,8 +1,10 @@
 .banner .logo {
     display: flex;
-    max-width: 400px;
-    margin: 50px auto;
+    max-width: 290px;
+    margin: auto;
+    padding: 30px 0;
 }
+
 
 .navbar-expand-lg .navbar-collapse {
     justify-content:flex-end;
@@ -13,6 +15,7 @@
     display: flex;
     justify-content: center;
     text-decoration: underline;
+    margin-top: 20px;
 }
 
 .carousel-item {
@@ -30,14 +33,20 @@ max-width: 48px;
  .soc-media {
 display: flex;
 justify-content: space-between;
+margin: 30px;
 }
 
 .contacts {
-    margin: 50px;
+    margin-top: 20px;
+    padding: 20px;
     text-align: center;
     text-decoration: underline;
+    background-color: #f8f9fa;
     }
 .paragraph {
     text-decoration: overline;
     margin-top: 40px;
+}
+main {
+        background-color: #ae742a0f;
 }

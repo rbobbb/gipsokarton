@@ -6,7 +6,7 @@ const slider = $('.range-slider'),
 slider.each(function(){
 
   value.each(function(){
-    var value = $(this).prev().attr('value');
+    let value = $(this).prev().attr('value');
     $(this).html(value);
   });
 

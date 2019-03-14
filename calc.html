@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gipsokarton</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href=css/calc.css>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="banner">
+                    <a href="index.html">
+                        <img src="img/gipsokarton-logo-l.png" alt="лого будівельної компанії" class="logo">
+                    </a>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">GIPSOKARTON</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Про нас</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="calculator.html">
+                                    Калькулятор<span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Портфоліо</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.html">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <form name="customerForm" method="POST" action="https://formspree.io/roman.bobyk@gmail.com">
+                <div class="calc-name"></div>
+                <h1>Калькулятор вартості дизайнеського ремонту</h1>
+        <div class="style-choice">
+            <p>
+                <img src="img/icones/data-usage-icon.png" alt="іконка вибру стилю ремонту"/>
+                <div class="center-on-page">
+                    <div class="select">
+                        <select name="slct" id="slct">
+                            <option>Вибір стилю</option>
+                            <option value="1">Мінімалізм</option>
+                            <option value="2">Скандинавський</option>
+                            <option value="3">Лофт</option>
+                            <option value="4">Сучасна класика</option>
+                        </select>
+                    </div>
+                </div>
+                <!--    <div class="dropdown">-->
+                <!--  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                <!--    Стиль ремонту:-->
+                <!--  </button>-->
+                <!--  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">-->
+                <!--    <a class="dropdown-item" href="#">Мінімалізм</a>-->
+                <!--    <a class="dropdown-item" href="#">Скандинавський</a>-->
+                <!--    <a class="dropdown-item" href="#">Лофт</a>-->
+                <!--    <a class="dropdown-item" href="#">Сучасна класика</a>-->
+                <!--  </div>-->
+                <!--</div>-->
+                <!--<label for="стиль-ремонту">-->
+                <!--  <span>Стиль ремонту:</span>-->
+                <!--</label>-->
+                <!--<select id="стиль-ремонту" name="стиль-ремонту">-->
+                <!--  <option value="minimalism">Мінімалізм</option>-->
+                <!--  <option value="scandinvian">Скандинавський</option>-->
+                <!--  <option value="loft">Лофт</option>-->
+                <!--  <option value="modern-classic">Сучасна класика</option>-->
+                <!--</select></p>-->
+        </div>
+        <div class="img-styles">
+            <div class="card" style="width: 18rem;">
+                <img src="img/calculator/minimalism.jpg" class="card-img-top" alt="мінімалізм">
+                <div class="card-body">
+                    <p class="card-text">Мінімалізм.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/calculator/scandinavian.jpg" class="card-img-top" alt="скандинавський">
+                <div class="card-body">
+                    <p class="card-text">Скандинавський.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/calculator/loft.jpg" class="card-img-top" alt="лофт">
+                <div class="card-body">
+                    <p class="card-text">Лофт.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/calculator/modern-classic.jpg" class="card-img-top" alt="сучасна класика">
+                <div class="card-body">
+                    <p class="card-text">Сучасна класика.</p>
+                </div>
+            </div>
+        </div>
+        <!--<h3>Мінімалізм</h3>-->
+        <!--<img src="img/calculator/minimalism.jpg" alt="minimalism" />-->
+        <!--<h3>Скандинавський</h3>-->
+        <!--<img src="img/calculator/scandinavian.jpg" alt="scandinavian" />-->
+        <!--<h3>Лофт</h3>-->
+        <!--<img src="img/calculator/loft.jpg" alt="loft" />-->
+        <!--<h3>Сучасна класика</h3>-->
+        <!--<img src="img/calculator/modern-classic.jpg" alt="modern-classic" />-->
+        <div class="style-choice">
+            <p>
+                <img src="img/icones/home-icon.png" alt="home-icon"/>Житло
+            </p>
+        </div>
+        <div class="area">
+            <p>Площа, м2</p>
+            <div class="range-slider">
+                <input class="range-slider__range" type="range" value="77" min="0" max="150">
+                <span class="range-slider__value">0</span>
+            </div>
+</div>
+<div class="city">
+    
+            <span>Населений пункт:</span>
+
+<div class="select">
+    <select name="slct" id="selct">
+        <option>населений пункт</option>
+        <option value="1">Львів</option>
+        <option value="2">Луцьк</option>
+        <option value="3">Рівне</option>
+        <option value="4">Тернопіль</option>
+    </select>
+</div>
+<!--</label>-->
+<!--<select id="населений-пункт" name="Населений-пункт">-->
+<!--  <option value="Львів">Львів</option>-->
+<!--  <option value="Луцьк">Луцьк</option>-->
+<!--  <option value="Рівне">Рівне</option>-->
+<!--</select></p>-->
+</div>
+<div class="type-of-house">
+
+        <!--<label for="тип-житла">-->
+            <span>Тип житла:</span>
+        <!--</label>-->
+    <div class="select">
+        <select name="slct" id="slect">
+            <option>тип житла</option>
+            <option value="1">Новобудова</option>
+            <option value="2">Квартира (вторинний ринок)</option>
+            <option value="3">Приватний будинок</option>
+            <option value="4">Квартира (для оренди)</option>
+        </select>
+    </div>
+    <!--<select id="тип-житла" name="Тип-житла">-->
+    <!--  <option value="Новобудова">Новобудова</option>-->
+    <!--  <option value="Квартира (вторинний ринок)">Квартира (вторинний ринок)</option>-->
+    <!--  <option value="Приватний будинок">Приватний будинок</option>-->
+    <!--</select>-->
+</div>
+<div class="service">
+    
+        <!--<label for="послуга">-->
+            <span>Послуга:</span>
+            <div class="select">
+                <select name="slct" id="slcct">
+                    <option>послуга</option>
+                    <option value="1">"Під ключ"</option>
+                    <option value="2">Розробка проекту</option>
+                    <option value="3">Авторський нагляд</option>
+                </select>
+            </div>
+            <!--</label>-->
+            <!--<select id="послуга" name="Послуга">-->
+            <!--  <option value="Під ключ">"Під ключ"</option>-->
+            <!--  <option value="Розробка проекту">Розробка проекту</option>-->
+            <!--  <option value="Авторський нагляд">Авторський нагляд</option>-->
+            <!--</select>-->
+    
+</div>
+<div class="personal">
+<img src="img/icones/person-icon.png" alt="іконка персони"/>
+Ваші контакти</div>
+    <div class="form-row">
+        <div class="col-md-2 mb-4">
+            <label for="validationCustom01">Ім'я</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Ім'я" value="" required>
+        </div>
+        <div class="col-md-2 mb-4">
+            <label for="validationCustom02">Прізвище</label>
+            <input type="text" class="form-control" id="validationCustom02" placeholder="Прізвище" value="" required>
+        </div>
+        <div class="col-md-2 mb-3">
+            <label for="validationCustom">Номер телефону</label>
+            <input type="text" class="form-control" id="validationCustom" placeholder="номер телефону" value="" required>
+        </div>
+        <div class="col-md-2 mb-3">
+            <label for="validationCustom03">e-mail</label>
+            <input type="text" class="form-control" id="validationCustom03" placeholder="e-mail" required>
+        </div>
+        <div class="col-md-2 mb-3">
+            <label for="msg">Примітки</label>
+            <textarea id="msg" placeholder="Примітки" name="useMessage"></textarea>
+            <!--<input type="text" class="form-control" id="validationCustom05" placeholder="Примітки">-->
+        </div>
+        <div class="form-submit">
+            <button class="btn btn-primary" type="submit">Замовити</button>
+        </div>
+        <!--<p><label>Ім'я, Прізвище:<input type="text" placeholder="Ім'я, прізвище" name="yourName" required />-->
+        <!--  </label>-->
+        <!--  <br>-->
+        <!--  <label>Номер телефону:<input type="text" placeholder="Номер телефону" name="phoneNumber" required />-->
+        <!--   </label>-->
+        <!--  <br>-->
+        <!--  <label>E-mail:<input type="text" placeholder="E-mail" name="eMail" required />-->
+        <!--   </label>-->
+        <!--  <label for="msg">Примітки:</label>-->
+        <!--  <textarea id="msg" placeholder="Примітки" name="useMessage"></textarea>-->
+        <!--  <input type="submit" value="Розрахувати" />-->
+        <!--<input type="button" class="btn btn-default" value="Розрахувати" id="submitBtn"/>-->
+        <!-- </p>-->
+    </div>
+</form>
+<footer>
+    <div class="contacts">
+        <p>Слідкуйте за нами</p>
+        <div class="soc-media">
+            <a href="contacts.html">
+                <img src="img/phone-icon.png" alt="іконка телефону" class="phone-icon"/>
+            </a>
+            <a href="contacts.html">
+                <img src="img/icones/facebook.svg" alt="іконка фейсбук"/>
+            </a>
+            <a href="contacts.html">
+                <img src="img/icones/instagram.svg" alt="іконка інстаграм"/>
+            </a>
+            <a href="contacts.html">
+                <img src="img/icones/youtube.svg" alt="іконка ютуб"/>
+            </a>
+        </div>
+    </div>
+</footer>
+</div>
+<!--</div><script type="text/javascript" src="js/index.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--<script type="text/javascript" src="js/idex.js"></script>-->
+</body>
+</html>
