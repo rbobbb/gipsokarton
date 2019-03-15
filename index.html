@@ -7,6 +7,7 @@
         <title>Gipsokarton</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/index.css">
+        <!--<script src="js/index.js"></script>  -->
     </head>
     <body>
         <div class="container">
@@ -49,69 +50,42 @@
                     </div>
                 </div>
                 <div class="jumbotron jumbotron-fluid2">
-                    <form class="needs-validation" novalidate>
-                        <div class="form-row">
-                            <div class="col-md-3 mb-3 col-lg-3">
+                    <!--<form class="call-form" required>-->
+                    <!--<form name="call-form" method="POST" action="https://formspree.io/roman.bobyk@gmail.com" required>-->
+                    <form method="POST" action="https://formspree.io/roman.bobyk@gmail.com" required>
+                        <div class="form row">
+                            <div class="col-12 col-lg-6">
                                 <label for="validationCustom01">Ім'я</label>
                                 <input type="text" class="form-control" id="validationCustom01" placeholder="Ім'я" value="" required>
                             </div>
-                            <div class="col-md-3 mb-3 col-lg-3">
+                            <div class="col-12 col-lg-6">
                                 <label for="validationCustom02">Прізвище</label>
                                 <input type="text" class="form-control" id="validationCustom02" placeholder="Прізвище" value="" required>
                             </div>
-                            <div class="col-md-3 mb-3 col-lg-3">
+                            <div class="col-12 col-lg-6">
                                 <label for="validationCustom">Номер телефону</label>
                                 <input type="text" class="form-control" id="validationCustom" placeholder="номер телефону" value="" required>
                             </div>
-                            <div class="col-md-3 mb-3 col-lg-3">
+                            <div class="col-12 col-lg-6">
                                 <label for="validationCustom03">Місто</label>
                                 <input type="text" class="form-control" id="validationCustom03" placeholder="Місто" required>
                             </div>
-                            <div class="col-md-8 mb-3 col-lg-3">
+                            <div class="col-12 col-lg-6">
                                 <label for="validationCustom04">Дата виїзду</label>
                                 <input type="date" class="form-control" id="validationCustom04" required>
                             </div>
-                            <div class="form-group">
-                                <label for="disabledSelect">Стиль ремонту</label>
-                                <select id="disabledSelect" class="form-control">
-                                    <option>Мінімалізм</option>
-                                    <option>Скандинавський</option>
-                                    <option>Лофт</option>
-                                    <option>Сучасна класика</option>
-                                </select>
+                            <div class="form-group col-12 col-lg-6">
+                                <label for="exampleFormControlTextarea1"></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Примітки" rows="2"></textarea>
                             </div>
-                            <div class="col-md-8 mb-3 col-lg-3">
-                                <label for="msg">Примітки</label>
-                                <textarea id="msg" placeholder="Примітки" name="useMessage"></textarea>
-                            </div>
-                            <div class="form-submit">
+                            <div class="form-submit col-12">
                                 <button class="btn btn-primary" type="submit">Замовити</button>
                             </div>
                         </div>
                     </form>
+                    <!--<div class="server-response"></div>-->
                 </div>
             </main>
-            <script>
-                // Example starter JavaScript for disabling form submissions if there are invalid fields
-                (function() {
-                    'use strict';
-                    window.addEventListener('load', function() {
-                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                        var forms = document.getElementsByClassName('needs-validation');
-                        // Loop over them and prevent submission
-                        var validation = Array.prototype.filter.call(forms, function(form) {
-                            form.addEventListener('submit', function(event) {
-                                if (form.checkValidity() === false) {
-                                    event.preventDefault();
-                                    event.stopPropagation();
-                                }
-                                form.classList.add('was-validated');
-                            }, false);
-                        });
-                    }, false);
-                }
-                )();
-            </script>
             <section id="content">
                 <h2>Про Нас</h2>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor
@@ -145,11 +119,13 @@
                             <h5 class="mt-0 mb-1">
                                 093-123-45-67
                                 <br>067-123-45-67
+                            
                             </h5>
                             <br>
                             <h3>
                                 м.Львів, вул. Липинського, 555<br>
                                 м.Луцьк, вул.Шевченка, 777<br>м.Рівне, вул. Франка, 111
+                            
                             </h3>
                         </div>
                     </div>

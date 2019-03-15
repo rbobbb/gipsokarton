@@ -1,7 +1,8 @@
 .banner .logo {
     display: flex;
-    max-width: 400px;
-    margin: 50px auto;
+    max-width: 290px;
+    margin: auto;
+    padding: 30px 0;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -23,12 +24,18 @@ h3 {
     
 }
 
+.style-chooice {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 .style-choice {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
     align-items: baseline;
-    text-decoration: underline
+    text-decoration: underline;
+    font-size: 1.4rem;
 }
 
 .img-styles {
@@ -41,6 +48,7 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     margin: 20px;
+    align-items: baseline;
 }
 
 .range-slider__range {
@@ -278,3 +286,26 @@ div.personal {
     justify-content: center;
     text-decoration: underline;
 }
+
+.form-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+button.btn.btn-primary {
+    background-color: #ae742a;
+    border-color: #ae742a;
+}
+
+div.personal.row {
+    align-items: baseline;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.personal {
+    font-size: 1.3rem;
+}
+

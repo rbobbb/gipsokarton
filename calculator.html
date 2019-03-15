@@ -7,6 +7,7 @@
         <title>Gipsokarton</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href=css/calc.css>
+        <script src="js/calc.js"></script>
     </head>
     <body>
         <div class="container">
@@ -44,60 +45,61 @@
             <form name="customerForm" method="POST" action="https://formspree.io/roman.bobyk@gmail.com">
                 <div class="calc-name"></div>
                 <h1>Калькулятор вартості дизайнеського ремонту</h1>
-                <div class="style-choice">
-                    <p>
-                        <img src="img/icones/data-usage-icon.png" alt="іконка вибру стилю ремонту"/>
-                        <div class="center-on-page">
-                            <div class="select">
-                                <select name="slct" id="slct">
-                                    <option>Вибір стилю</option>
-                                    <option value="1">Мінімалізм</option>
-                                    <option value="2">Скандинавський</option>
-                                    <option value="3">Лофт</option>
-                                    <option value="4">Сучасна класика</option>
-                                </select>
-                            </div>
+                <div class="style-chooice">
+                    <img src="img/icones/data-usage-icon.png" alt="іконка вибру стилю ремонту"/>
+                    <div class="center-on-page">
+                        <div class="select">
+                            <select name="slct" id="slct">
+                                <option>Вибір стилю</option>
+                                <option value="1">Мінімалізм</option>
+                                <option value="2">Скандинавський</option>
+                                <option value="3">Лофт</option>
+                                <option value="4">Сучасна класика</option>
+                            </select>
                         </div>
+                    </div>
                 </div>
-                <div class="img-styles">
+                <div class="img-styles row">
                     <!--<div class="col-md-1 mb-1">-->
-                    <div class="card" style="width: 25rem;">
+                    <article class="card col-12 col-lg-6">
                         <div class="card-body">
                             <img src="img/calculator/minimalism.jpg" class="card-img-top" alt="мінімалізм">
                             <p class="card-text">Мінімалізм.</p>
                         </div>
                         <!--</div>-->
-                    </div>
+                    </article>
                     <!--<div class="col-md-8 mb-8">-->
-                    <div class="card" style="width: 25rem;">
+                    <article class="card col-12 col-lg-6">
                         <div class="card-body">
                             <img src="img/calculator/scandinavian.jpg" class="card-img-top" alt="скандинавський">
                             <p class="card-text">Скандинавський.</p>
                             <!--</div>-->
                         </div>
-                    </div>
-                    <div class="card" style="width: 30rem;">
+                    </article>
+                    <article class="card col-12 col-lg-6">
                         <div class="card-body">
                             <img src="img/calculator/loft.jpg" class="card-img-top" alt="лофт">
                             <p class="card-text">Лофт.</p>
                         </div>
-                    </div>
-                    <div class="card" style="width: 30rem;">
+                    </article>
+                    <article class="card col-12 col-lg-6">
                         <div class="card-body">
                             <img src="img/calculator/modern-classic.jpg" class="card-img-top" alt="сучасна класика">
                             <p class="card-text">Сучасна класика.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="style-choice">
-                    <img src="img/icones/home-icon.png" alt="home-icon"/>Житло
-        
+                    <img src="img/icones/home-icon.png" alt="home-icon"/>
+                    <p>Житло</p>
                 </div>
                 <div class="area">
                     <p>Площа, м2</p>
-                    <div class="range-slider">
-                        <input class="range-slider__range" type="range" value="77" min="0" max="150">
-                        <span class="range-slider__value">0</span>
+                    <div class="rangeSlider">
+                        <input class="range-slider__range" type="range" value="77" min="0" max="150" id="myRange">
+                        <span class="range-slider__value">
+                            <span id="demo"></span>
+                        </span>
                     </div>
                 </div>
                 <div class="city">
@@ -135,29 +137,32 @@
                         </select>
                     </div>
                 </div>
-                <div class="personal">
+                <div class="personal  row">
                     <img src="img/icones/person-icon.png" alt="іконка персони"/>Ваші контакти
+                
+                
                 </div>
                 <div class="form-row">
-                    <div class="col-md-2 mb-4">
+                    <div class="col-12 col-lg-6">
                         <label for="validationCustom01">Ім'я</label>
                         <input type="text" class="form-control" id="validationCustom01" placeholder="Ім'я" value="" required>
                     </div>
-                    <div class="col-md-2 mb-4">
+                    <div class="col-12 col-lg-6">
                         <label for="validationCustom02">Прізвище</label>
                         <input type="text" class="form-control" id="validationCustom02" placeholder="Прізвище" value="" required>
                     </div>
-                    <div class="col-md-2 mb-3">
+                    <div class="col-12 col-lg-6">
                         <label for="validationCustom">Номер телефону</label>
                         <input type="text" class="form-control" id="validationCustom" placeholder="номер телефону" value="" required>
                     </div>
-                    <div class="col-md-2 mb-3">
+                    <br>
+                    <div class="col-12 col-lg-6">
                         <label for="validationCustom03">e-mail</label>
                         <input type="text" class="form-control" id="validationCustom03" placeholder="e-mail" required>
                     </div>
-                    <div class="col-md-2 mb-3">
-                        <label for="msg">Примітки</label>
-                        <textarea id="msg" placeholder="Примітки" name="useMessage"></textarea>
+                    <div class="form-group col-12 col-lg-6">
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Примітки" rows="2"></textarea>
                     </div>
                     <div class="form-submit">
                         <button class="btn btn-primary" type="submit">Замовити</button>
@@ -187,6 +192,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <!--<script type="text/javascript" src="js/idex.js"></script>-->
+        <script src="js/calc.js"></script>
     </body>
 </html>

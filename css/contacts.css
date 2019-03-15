@@ -17,20 +17,21 @@ h1 {
 }
 
 .all-cont {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content:center;
+    align-items: center;
     margin: 40px;
 }
 
-.first-cont {
-        align-self: center;
-        justify-self: center;
-}
+/*.first-cont {*/
+/*        align-self: center;*/
+/*        justify-self: center;*/
+/*}*/
 
-.second-cont {
-        align-self: center;
-        justify-self: center;
-}
+/*.second-cont {*/
+/*        align-self: center;*/
+/*        justify-self: center;*/
+/*}*/
 
 .map {
     margin: 30px;

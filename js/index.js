@@ -1,19 +1,12 @@
-const range <a href="https://www.jqueryscript.net/slider/">Slider</a> = function(){
-const slider = $('.range-slider'),
-    range = $('.range-slider__range'),
-    value = $('.range-slider__value');
-  
-slider.each(function(){
+document. querySelector('.call-form').addEventListener('submit', submitForm)
 
-  value.each(function(){
-    let value = $(this).prev().attr('value');
-    $(this).html(value);
-  });
-
-  range.on('input', function(){
-    $(this).next(value).html(this.value);
-  });
-});
-};
-
-rangeSlider();
+function submitForm (e) {
+    e.preventDefault();
+    fetch('form.php', {
+        method: 'POST',
+        body: new FormData(document.querySelector('.call-form'))
+    })
+    .then( response => response.text() )
+    .then( html => document.querySelector('.server-response') 
+                            .innerHTML = html );
+}
